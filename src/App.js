@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Intro from './containers/Intro'
-import Skills from './containers/Skills'
+import Intro from './containers/intro/Intro'
+import NavBar from './containers/NavBar'
+import Skills from './containers/about/Skills'
 import Projects from './containers/Projects'
 import Blog from './containers/Blog'
 import Contact from './containers/Contact'
 
 export default class App extends Component {
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll())
+  }
 
   handleViewProjectEnter = () => {
     const viewProjArrow = document.querySelector('.fas.fa-arrow-right');
@@ -18,10 +23,23 @@ export default class App extends Component {
     viewProjArrow.classList.remove('rotate');
   }
 
+  handleScroll = () => {
+    debugger
+    const el = document.querySelector('#skills');
+    const scrollY = el.scrollHeight
+    if(window.scrollY > scrollY) {
+      console.log('Hi')
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        < Intro handleViewProjectEnter={this.handleViewProjectEnter} handleViewProjectLeave={this.handleViewProjectLeave} />
+      <div className="App" onScroll={this.handleScroll}>
+        < Intro 
+          handleViewProjectEnter={this.handleViewProjectEnter} 
+          handleViewProjectLeave={this.handleViewProjectLeave} 
+        />
+        < NavBar />
         < Skills />
         < Projects />
         < Blog />

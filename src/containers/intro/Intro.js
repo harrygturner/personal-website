@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AnimatedTyping from '../components/AnimatedTyping'
-import '../intro.css'
+import AnimatedTyping from '../../components/AnimatedTyping'
+import './intro.css'
 
 export default class Intro extends Component {
 

@@ -12,3 +12,21 @@
   align-items: center;
   background: #41B3A3;
 }
+
+#navbar {
+  display: grid;
+  height: 7vh;
+  grid-template-columns: repeat(5, 9vw) auto;
+  background: #C38D9E;
+  border-bottom: solid 3px #00afd6;
+  color: white
+}
+
+#navbar div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
