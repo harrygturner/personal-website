@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const NavBar = props => {
+
+   // useEffect(() => {
+   //    const { sectionOnView } = props
+   //    debugger
+   // }, []);
+
    return(
       <div id='navbar'>
-         <div>HOME</div>
-         <div>ABOUT</div>
-         <div>PROJECTS</div>
-         <div>BLOG</div>
-         <div>CONTACT</div>
+         <div className="intro">HOME</div>
+         <div className="skills">ABOUT</div>
+         <div className="projects">PROJECTS</div>
+         <div className="blog">BLOG</div>
+         <div className="contact">CONTACT</div>
       </div>
    )
 }

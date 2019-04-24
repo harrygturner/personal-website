@@ -9,8 +9,38 @@ import Contact from './containers/Contact'
 
 export default class App extends Component {
 
+  state = {
+    sectionOnView: ''
+  }
+
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll())
+    document.addEventListener('scroll', this.trackScrolling);
+  }
+
+  trackScrolling = () => {
+    const el = document.querySelector('#navbar');
+    if(el.getBoundingClientRect().top < 0 && !el.classList.contains('stick')){
+      el.classList.add('stick');
+    } else if (el.getBoundingClientRect().top > 0 && el.classList.contains('stick')) {
+      el.classList.remove('stick');
+    }
+    this.highlightNavBarSections()
+  }
+
+  highlightNavBarSections = () => {
+    const htmlCollection = document.children[0].children[3].children[1].children[0].children
+    const arrayOfSections = Array.prototype.slice.call(htmlCollection)
+    arrayOfSections.forEach(section => {
+      if(section.id !== 'navbar'){
+        const sectionTop = section.getBoundingClientRect().top
+        const sectionHeight = section.getBoundingClientRect().height
+        if(sectionTop < 0 && (sectionTop + sectionHeight) > 0) {
+          this.setState({ 
+            sectionOnView: section.id
+          })
+        }
+      }
+    })
   }
 
   handleViewProjectEnter = () => {
@@ -39,7 +69,7 @@ export default class App extends Component {
           handleViewProjectEnter={this.handleViewProjectEnter} 
           handleViewProjectLeave={this.handleViewProjectLeave} 
         />
-        < NavBar />
+        < NavBar sectionOnView={this.state.sectionOnView} />
         < Skills />
         < Projects />
         < Blog />

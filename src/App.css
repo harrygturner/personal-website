@@ -30,3 +30,12 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+#projects, #contact {
+  background: whitesmoke;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+}
