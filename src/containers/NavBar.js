@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const NavBar = props => {
-
-   // useEffect(() => {
-   //    const { sectionOnView } = props
-   //    debugger
-   // }, []);
 
    return(
       <div id='navbar'>

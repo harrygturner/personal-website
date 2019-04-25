@@ -34,10 +34,11 @@ export default class App extends Component {
       if(section.id !== 'navbar'){
         const sectionTop = section.getBoundingClientRect().top
         const sectionHeight = section.getBoundingClientRect().height
-        if(sectionTop < 0 && (sectionTop + sectionHeight) > 0) {
-          this.setState({ 
-            sectionOnView: section.id
-          })
+        const navbarSection = document.querySelector(`#navbar .${section.id}`)
+        if(sectionTop < 100 && (sectionTop + (sectionHeight-100)) > 0) {
+          navbarSection.classList.add('highlight');
+        } else {
+          navbarSection.classList.remove('highlight');
         }
       }
     })
@@ -51,15 +52,6 @@ export default class App extends Component {
   handleViewProjectLeave = () => {
     const viewProjArrow = document.querySelector('.fas.fa-arrow-right');
     viewProjArrow.classList.remove('rotate');
-  }
-
-  handleScroll = () => {
-    debugger
-    const el = document.querySelector('#skills');
-    const scrollY = el.scrollHeight
-    if(window.scrollY > scrollY) {
-      console.log('Hi')
-    }
   }
 
   render() {
