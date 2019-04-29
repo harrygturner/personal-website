@@ -4,6 +4,18 @@
    z-index: 1;
 }
 
+#intro .content h1 {
+  font-family: 'Questrial';
+  margin-bottom: 3vh;
+}
+
+.header hr {
+  width: 5vw;
+  height: 3px;
+  background: black;
+  border: black;
+}
+
 .projects-link {
    border: white 3px solid;
    padding: 15px;

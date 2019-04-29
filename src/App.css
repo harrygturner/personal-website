@@ -6,6 +6,16 @@
   height: 100vh;
 }
 
+h1 {
+  font-family: 'Questrial';
+  letter-spacing: 1px;
+  margin-bottom: 1vh;
+}
+
+.header {
+  padding-top: 5vh;
+}
+
 #intro {
   display: flex;
   justify-content: center;

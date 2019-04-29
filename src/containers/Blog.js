@@ -5,7 +5,10 @@ export default class Blog extends Component {
    render() {
       return (
          <div id='blog' className='section'>
-            <h1>Blog</h1>
+            <div className='header'>
+               <h1>BLOG</h1>
+               <hr />
+            </div>
          </div>
       )
    }
