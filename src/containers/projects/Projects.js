@@ -18,40 +18,159 @@ export default class Projects extends Component {
       this.setState({
          projectsDisplay: e.target.className
       })
+      this.highlightProjectType(e.target.className);
+   }
+
+   handleMouseEnter = e => {
+      const img = e.target.children[0];
+      debugger
+      img.classList.add('fade-out');
+      img.classList.remove('fade-in');
+   }
+
+   handleMouseLeave = e => {
+      const img = e.target.children[0];
+      img.classList.remove('fade-out');
+      img.classList.add('fade-in');
    }
 
    renderAllProjects = () => (
-      <div className='projects-disp all'>
-         <div id='AA'><img src={AAimage} alt='project thumbnail'/></div>
-         <div id='gympal'><img src={GPimage} alt='project thumbnail' /></div>
-         <div id='NC'><img src={NCimage} alt='project thumbnail' /></div>
-         <div id='SFB'><img src={SFBimage} alt='project thumbnail' /></div>
-         <div id='WI'><img src={WIimage} alt='project thumbnail' /></div>
-         <div id='VR'><img src={VRimage} alt='project thumbnail' /></div>
+      <div className='projects-disp all' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='AA'>
+            <img src={AAimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>AccessAbled</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='gympal'>
+            <img src={GPimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>GymPal</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='NC'>
+            <img src={NCimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>NightCrawler</div>
+               <div className='language'>Vanilla Javascript and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='SFB'>
+            <img src={SFBimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Simpsons Fantasy Basketball</div>
+               <div className='language'>Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='WI'>
+            <img src={WIimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Wheelchair Analysis</div>
+               <div className='language'>Mechanical Engineering and C++</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='VR'>
+            <img src={VRimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Voice Recognition</div>
+               <div className='language'>Vanilla Javascript</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
       </div>
    )
 
    renderRubyProjects = () => (
       <div className='projects-disp ruby'>
-         <div id='AA'><img src={AAimage} alt='project thumbnail' /></div>
-         <div id='gympal'><img src={GPimage} alt='project thumbnail' /></div>
-         <div id='NC'><img src={NCimage} alt='project thumbnail' /></div>
-         <div id='SFB'><img src={SFBimage} alt='project thumbnail' /></div>
+         <div id='AA'>
+            <img src={AAimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>AccessAbled</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='gympal'>
+            <img src={GPimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>GymPal</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='NC'>
+            <img src={NCimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>NightCrawler</div>
+               <div className='language'>Vanilla Javascript and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='SFB'>
+            <img src={SFBimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Simpsons Fantasy Basketball</div>
+               <div className='language'>Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
       </div>
    )
 
    renderJsProjects = () => (
       <div className='projects-disp js'>
-         <div id='AA'><img src={AAimage} alt='project thumbnail' /></div>
-         <div id='gympal'><img src={GPimage} alt='project thumbnail' /></div>
-         <div id='NC'><img src={NCimage} alt='project thumbnail' /></div>
-         <div id='VR'><img src={VRimage} alt='project thumbnail' /></div>
+         <div id='AA'>
+            <img src={AAimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>AccessAbled</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='gympal'>
+            <img src={GPimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>GymPal</div>
+               <div className='language'>React.js and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='NC'>
+            <img src={NCimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>NightCrawler</div>
+               <div className='language'>Vanilla Javascript and Ruby on Rails</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
+         <div id='VR'>
+            <img src={VRimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Voice Recognition</div>
+               <div className='language'>Vanilla Javascript</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
       </div>
    )
 
    renderCProjects = () => (
       <div className='projects-disp c++'>
-         <div id='WI'><img src={WIimage} alt='project thumbnail' /></div>
+         <div id='WI'>
+            <img src={WIimage} alt='project thumbnail' className='thumbnail' />
+            <div className='text'>
+               <div className='bold'>Wheelchair Analysis</div>
+               <div className='language'>Mechanical Engineering and C++</div>
+            </div>
+            <div className='btn'>LEARN MORE</div>
+         </div>
       </div>
    )
 
@@ -76,6 +195,16 @@ export default class Projects extends Component {
       }
    }
 
+   highlightProjectType = typeClicked => {
+      const typesArray = Array.prototype.slice.call(document.querySelector('.project-types').children);
+      typesArray.forEach(type => {
+         type.classList.contains(typeClicked) 
+            ? type.classList.add('highlight')
+            : type.classList.remove('highlight')
+         }
+      )
+   }
+
    render() {
       return (
          <div id='projects' className='section'>
@@ -86,7 +215,7 @@ export default class Projects extends Component {
             <div className='project-cont'>
                <div className='project-types'>
                   <div></div>
-                  <div className='all' onClick={this.changeDisplay}>ALL</div>
+                  <div className='all highlight' onClick={this.changeDisplay}>ALL</div>
                   <div className='ruby' onClick={this.changeDisplay}>RUBY / RAILS</div>
                   <div className='js' onClick={this.changeDisplay}>JAVASCRIPT / REACT</div>
                   <div className='c++' onClick={this.changeDisplay}>C++</div>
