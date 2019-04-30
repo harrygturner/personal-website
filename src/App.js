@@ -54,14 +54,25 @@ export default class App extends Component {
     viewProjArrow.classList.remove('rotate');
   }
 
+  handleSectionClick = e => {
+    const section = e.target.className;
+    this.scrollTo(section);
+  }
+
+  scrollTo = section => {
+    const target = document.querySelector(`#${section}`);
+    window.scrollTo(0, target.offsetTop);
+  }
+
   render() {
     return (
       <div className="App" onScroll={this.handleScroll}>
         < Intro 
           handleViewProjectEnter={this.handleViewProjectEnter} 
           handleViewProjectLeave={this.handleViewProjectLeave} 
+          scrollTo={this.scrollTo}
         />
-        < NavBar sectionOnView={this.state.sectionOnView} />
+        < NavBar sectionOnView={this.state.sectionOnView} handleSectionClick={this.handleSectionClick} />
         < Skills />
         < Projects />
         < Blog />

@@ -47,6 +47,7 @@ export default class Intro extends Component {
                <div className='projects-link' 
                   onMouseEnter={this.props.handleViewProjectEnter} 
                   onMouseLeave={this.props.handleViewProjectLeave} 
+                  onClick={() => this.props.scrollTo('projects')}
                >
                   View my projects <i className="fas fa-arrow-right"></i>
                </div>
