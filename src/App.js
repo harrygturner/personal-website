@@ -4,7 +4,7 @@ import Intro from './containers/intro/Intro'
 import NavBar from './containers/NavBar'
 import Skills from './containers/about/Skills'
 import Projects from './containers/projects/Projects'
-import Blog from './containers/Blog'
+import Blog from './containers/blog/Blog'
 import Contact from './containers/Contact'
 
 export default class App extends Component {

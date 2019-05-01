@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './blog.css'
 
 export default class Blog extends Component {
 
@@ -8,6 +9,12 @@ export default class Blog extends Component {
             <div className='header'>
                <h1>BLOG</h1>
                <hr />
+            </div>
+            <div className='blog-cont'>
+               <div className='card'></div>
+               <div className='card'></div>
+               <div className='card'></div>
+               <div className='card'></div>
             </div>
          </div>
       )
