@@ -77,7 +77,10 @@ export default class Projects extends Component {
 
    renderAllProjects = () => (
       <div className='projects-disp all'>
-         <div id='AA' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='AA' 
+            onMouseEnter={this.handleMouseEnter} 
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={AAimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>AccessAbled</div>
@@ -85,7 +88,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='gympal' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='gympal' 
+            onMouseEnter={this.handleMouseEnter} 
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={GPimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>GymPal</div>
@@ -93,7 +99,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='NC' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='NC' 
+            onMouseEnter={this.handleMouseEnter} 
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={NCimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>NightCrawler</div>
@@ -101,7 +110,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='SFB' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='SFB' 
+            onMouseEnter={this.handleMouseEnter} 
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={SFBimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Simpsons Fantasy Basketball</div>
@@ -109,7 +121,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='WI' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='WI' 
+            onMouseEnter={this.handleMouseEnter} 
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={WIimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Wheelchair Analysis</div>
@@ -117,7 +132,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='VR' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='VR' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={VRimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Voice Recognition</div>
@@ -130,7 +148,10 @@ export default class Projects extends Component {
 
    renderRubyProjects = () => (
       <div className='projects-disp ruby'>
-         <div id='AA' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='AA' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={AAimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>AccessAbled</div>
@@ -138,7 +159,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='gympal' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='gympal' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={GPimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>GymPal</div>
@@ -146,7 +170,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='NC' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='NC' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={NCimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>NightCrawler</div>
@@ -154,7 +181,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='SFB' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='SFB' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={SFBimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Simpsons Fantasy Basketball</div>
@@ -167,7 +197,10 @@ export default class Projects extends Component {
 
    renderJsProjects = () => (
       <div className='projects-disp js'>
-         <div id='AA' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='AA' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={AAimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>AccessAbled</div>
@@ -175,7 +208,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='gympal' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='gympal' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={GPimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>GymPal</div>
@@ -183,7 +219,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='NC' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='NC' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={NCimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>NightCrawler</div>
@@ -191,7 +230,10 @@ export default class Projects extends Component {
             </div>
             <div className='btn btn-hidden'>LEARN MORE</div>
          </div>
-         <div id='VR' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='VR' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={VRimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Voice Recognition</div>
@@ -204,7 +246,10 @@ export default class Projects extends Component {
 
    renderCProjects = () => (
       <div className='projects-disp c++'>
-         <div id='WI' onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
+         <div id='WI' 
+            onMouseEnter={this.handleMouseEnter}
+            onMouseLeave={this.handleMouseLeave}
+         >
             <img src={WIimage} alt='project thumbnail' className='thumbnail' />
             <div className='text top-hidden'>
                <div className='bold'>Wheelchair Analysis</div>

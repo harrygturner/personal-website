@@ -1,0 +1,50 @@
+/* #blog div {
+   border: solid 1px black;
+} */
+
+.blog-cont {
+   height: 50vh;
+   margin: 10%;
+   display: grid;
+   grid-template-columns: repeat(4, 23.5%);
+   grid-gap: 2%;
+}
+
+.blog-cont .card {
+   display: grid;
+   grid-template-rows: 45% 55%;
+}
+
+#blog .text-cont {
+   display: grid;
+   grid-template-rows: 30% 10% 60%;
+}
+
+#blog .text-cont div {
+   text-align: left;
+}
+
+#blog .text-cont .date {
+   margin: 0% 5% 0%;
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   font-weight: bolder;
+}
+
+#blog .text-cont .content {
+   margin: 3% 5% 4%;
+   color: black;
+   font-size: 16px;
+   letter-spacing: 1px;
+}
+
+#blog .text-cont .header {
+   margin: 3% 5% 2%;
+   color: #E8A87C;
+   font-size: 20px;
+   padding-top: 0vh;
+   font-weight: bolder;
+   letter-spacing: 2px;
+   line-height: 25px;
+}

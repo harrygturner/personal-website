@@ -61,7 +61,7 @@ export default class App extends Component {
 
   scrollTo = section => {
     const target = document.querySelector(`#${section}`);
-    window.scrollTo(0, target.offsetTop);
+    window.scrollTo(0, target.offsetTop - 20);
   }
 
   render() {

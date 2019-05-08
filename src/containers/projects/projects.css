@@ -50,7 +50,6 @@
    cursor: pointer;
    overflow: hidden;
    position: relative;
-   z-index: 2;
 }
 
 .projects-disp div img {
@@ -100,6 +99,11 @@
    padding: 3% 5%;
    border: solid 2px #E8A87C;
    transition: top 1s;
+}
+
+.projects-disp div .btn:hover {
+   background-color: #E8A87C;
+   color: white;
 }
 
 .text div {
