@@ -13,6 +13,15 @@
 .blog-cont .card {
    display: grid;
    grid-template-rows: 45% 55%;
+   cursor: pointer;
+}
+
+.blog-cont .card .img {
+   overflow-y: hidden;
+}
+
+.blog-cont .card .img img {
+   width: 100%;
 }
 
 #blog .text-cont {

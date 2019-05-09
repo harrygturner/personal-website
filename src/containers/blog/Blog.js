@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import './blog.css'
+import './blog.css';
+import TTHimg from '../../images/TTHackers.png';
+import EOKimg from '../../images/EOK.png';
+import LTRimg from '../../images/LTR.png';
+import RegexImg from '../../images/Regex.png'
 
 export default class Blog extends Component {
 
@@ -12,7 +16,9 @@ export default class Blog extends Component {
             </div>
             <div className='blog-cont'>
                <div className='card'>
-                  <div className='img'></div>
+                  <div className='img'>
+                     <img src={TTHimg} alt='Laptop being hacked' />
+                  </div>
                   <div className='text-cont'>
                      <div className='header'>
                         TalkTalk For Hackers
@@ -26,7 +32,9 @@ export default class Blog extends Component {
                   </div>
                </div>
                <div className='card'>
-                  <div className='img'></div>
+                  <div className='img'>
+                     <img src={EOKimg} alt='A microphone' />
+                  </div>
                   <div className='text-cont'>
                      <div className='header'>
                         The End of the Keyboard
@@ -40,7 +48,9 @@ export default class Blog extends Component {
                   </div>
                </div>
                <div className='card'>
-                  <div className='img'></div>
+                  <div className='img'>
+                     <img src={LTRimg} alt='Laptop connecting to internet' />
+                  </div>
                   <div className='text-cont'>
                      <div className='header'>
                         Localhost to Real World
@@ -54,7 +64,9 @@ export default class Blog extends Component {
                   </div>
                </div>
                <div className='card'>
-                  <div className='img'></div>
+                  <div className='img'>
+                     <img src={RegexImg} alt='Old typewriter keyboard' />
+                  </div>
                   <div className='text-cont'>
                      <div className='header'>
                         Regex: The Good, the Bad and the Basics
