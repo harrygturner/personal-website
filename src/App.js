@@ -64,6 +64,25 @@ export default class App extends Component {
     window.scrollTo(0, target.offsetTop - 20);
   }
 
+  handleLinkToBlog = e => {
+    switch (e.currentTarget.classList[1]){
+      case 'th':
+        window.open('https://medium.com/@harry.turner/talktalk-for-hackers-cc725429ed07', '_blank');
+        break;
+      case 'vr':
+        window.open('https://medium.com/voice-tech-podcast/voice-recognition-the-end-of-the-keyboard-79e70691a90d', '_blank');
+        break;
+      case 'lr':
+        window.open('https://medium.com/@harry.turner/deployment-localhost-to-real-world-cec1da110e28', '_blank');
+        break;
+      case 'rx':
+        window.open('https://medium.com/@harry.turner/regex-the-good-the-bad-and-the-basics-e9c247bc6d94', '_blank');
+        break;
+      default:
+        break;
+    }
+  }
+
   render() {
     return (
       <div className="App" onScroll={this.handleScroll}>
@@ -75,7 +94,7 @@ export default class App extends Component {
         < NavBar sectionOnView={this.state.sectionOnView} handleSectionClick={this.handleSectionClick} />
         < Skills />
         < Projects />
-        < Blog />
+        < Blog handleLinkToBlog={this.handleLinkToBlog} />
         < Contact />
       </div>
     );

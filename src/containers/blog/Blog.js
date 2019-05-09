@@ -15,7 +15,7 @@ export default class Blog extends Component {
                <hr />
             </div>
             <div className='blog-cont'>
-               <div className='card'>
+               <div className='card th' onClick={this.props.handleLinkToBlog}>
                   <div className='img'>
                      <img src={TTHimg} alt='Laptop being hacked' />
                   </div>
@@ -31,7 +31,7 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card'>
+               <div className='card vr' onClick={this.props.handleLinkToBlog}>
                   <div className='img'>
                      <img src={EOKimg} alt='A microphone' />
                   </div>
@@ -47,7 +47,7 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card'>
+               <div className='card lr' onClick={this.props.handleLinkToBlog}>
                   <div className='img'>
                      <img src={LTRimg} alt='Laptop connecting to internet' />
                   </div>
@@ -63,7 +63,7 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card'>
+               <div className='card rx' onClick={this.props.handleLinkToBlog}>
                   <div className='img'>
                      <img src={RegexImg} alt='Old typewriter keyboard' />
                   </div>
