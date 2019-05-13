@@ -47,8 +47,13 @@ h1 {
   color: #E8A87C;
 }
 
-#projects, #contact {
+#projects {
   background: whitesmoke;
+}
+
+#contact {
+  background: #41B3A3;
+  height: 80vh;
 }
 
 .stick {

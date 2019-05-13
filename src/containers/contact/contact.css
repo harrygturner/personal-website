@@ -1,0 +1,80 @@
+.traingle {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 15vh 50vw 0 50vw;
+   border-color: white transparent transparent transparent;
+}
+
+#contact .personal-message {
+   color: rgb(199, 111, 139);
+   margin: 4vh 0vw;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#contact .header {
+   color: white;
+}
+
+#contact .header hr {
+   background: white;
+}
+
+form {
+   max-width: 35%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: 20% 20% 40% 20%;
+   height: 40%;
+}
+
+#contact input {
+   margin: 0.3% 0;
+   width: 100%;
+   height: 5vh;
+   background-color: rgb(65, 158, 146);
+   border-color: rgb(65, 158, 146);
+   border: 0px;
+   padding: 0 1vw;
+   font-weight: bold;
+   color: whitesmoke;
+   font-size: 12px;
+   border-bottom: solid 1px inherit;
+}
+
+#contact .message input {
+   height: 95%;
+}
+
+#contact input::placeholder {
+   color: whitesmoke;
+}
+
+#contact input:focus{
+   outline: none;
+   /* border-bottom: solid 1px rgb(199, 111, 139); */
+}
+
+#contact .sub-btn input {
+   width: 20%;
+   height: 5vh;
+   cursor: pointer;
+   margin: 0;
+   border: solid 2px white;
+   color: white;
+   transition: background 1s, border 1s;
+   background-color: inherit;
+}
+
+.sub-btn {
+   display: flex;
+   justify-content: flex-end;
+   width: 101.5%;
+   margin-top: 1%;
+}
+
+#contact .sub-btn input:hover {
+   background: rgb(199, 111, 139);
+   border-color: rgb(199, 111, 139);
+}

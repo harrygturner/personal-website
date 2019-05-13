@@ -5,7 +5,7 @@ import NavBar from './containers/NavBar'
 import Skills from './containers/about/Skills'
 import Projects from './containers/projects/Projects'
 import Blog from './containers/blog/Blog'
-import Contact from './containers/Contact'
+import Contact from './containers/contact/Contact'
 
 export default class App extends Component {
 
