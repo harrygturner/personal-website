@@ -3,7 +3,7 @@ import './blog.css';
 import TTHimg from '../../images/TTHackers.png';
 import EOKimg from '../../images/EOK.png';
 import LTRimg from '../../images/LTR.png';
-import RegexImg from '../../images/Regex.png'
+import RegexImg from '../../images/Regex.png';
 
 export default class Blog extends Component {
 
@@ -15,7 +15,11 @@ export default class Blog extends Component {
                <hr />
             </div>
             <div className='blog-cont'>
-               <div className='card th' onClick={this.props.handleLinkToBlog}>
+               <div className='card th' 
+                  onClick={this.props.handleLinkToBlog}
+                  onMouseEnter={this.props.hanldeMouseEnter}
+                  onMouseLeave={this.props.handleMouseLeave}
+               >
                   <div className='img'>
                      <img src={TTHimg} alt='Laptop being hacked' />
                   </div>
@@ -31,7 +35,11 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card vr' onClick={this.props.handleLinkToBlog}>
+               <div className='card vr' 
+                  onClick={this.props.handleLinkToBlog}
+                  onMouseEnter={this.props.hanldeMouseEnter}
+                  onMouseLeave={this.props.handleMouseLeave}
+               >
                   <div className='img'>
                      <img src={EOKimg} alt='A microphone' />
                   </div>
@@ -47,7 +55,11 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card lr' onClick={this.props.handleLinkToBlog}>
+               <div className='card lr' 
+                  onClick={this.props.handleLinkToBlog}
+                  onMouseEnter={this.props.hanldeMouseEnter}
+                  onMouseLeave={this.props.handleMouseLeave}
+               >
                   <div className='img'>
                      <img src={LTRimg} alt='Laptop connecting to internet' />
                   </div>
@@ -63,7 +75,11 @@ export default class Blog extends Component {
                      </div>
                   </div>
                </div>
-               <div className='card rx' onClick={this.props.handleLinkToBlog}>
+               <div className='card rx' 
+                  onClick={this.props.handleLinkToBlog}
+                  onMouseEnter={this.props.hanldeMouseEnter}
+                  onMouseLeave={this.props.handleMouseLeave}
+               >
                   <div className='img'>
                      <img src={RegexImg} alt='Old typewriter keyboard' />
                   </div>

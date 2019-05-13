@@ -14,6 +14,7 @@
    display: grid;
    grid-template-rows: 45% 55%;
    cursor: pointer;
+   transition: opacity 1s;
 }
 
 .blog-cont .card .img {
@@ -39,6 +40,7 @@
    align-items: center;
    font-size: 12px;
    font-weight: bolder;
+   color: black;
 }
 
 #blog .text-cont .content {
@@ -56,4 +58,12 @@
    font-weight: bolder;
    letter-spacing: 2px;
    line-height: 25px;
+}
+
+.fade {
+   opacity: 0.2;
+}
+
+#blog .highlight {
+   text-decoration: underline;
 }

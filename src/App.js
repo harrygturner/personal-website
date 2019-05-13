@@ -83,6 +83,34 @@ export default class App extends Component {
     }
   }
 
+  // --------------- handle blog hover ---------------------------
+
+  handleBlogHover = e => {
+    const target = e.currentTarget;
+    const cardList = document.querySelectorAll('#blog .card')
+    const cardArr = Array.prototype.slice.call(cardList)
+    cardArr.forEach( card => {
+      if( target === card ){
+        card.classList.add('highlight')
+      } else {
+        card.classList.add('fade')
+      }
+    })
+  }
+
+  handleBlogLeave = e => {
+    const target = e.currentTarget;
+    const cardList = document.querySelectorAll('#blog .card')
+    const cardArr = Array.prototype.slice.call(cardList)
+    cardArr.forEach(card => {
+      if (target === card) {
+        card.classList.remove('highlight')
+      } else {
+        card.classList.remove('fade')
+      }
+    })
+  }
+
   render() {
     return (
       <div className="App" onScroll={this.handleScroll}>
@@ -94,7 +122,11 @@ export default class App extends Component {
         < NavBar sectionOnView={this.state.sectionOnView} handleSectionClick={this.handleSectionClick} />
         < Skills />
         < Projects />
-        < Blog handleLinkToBlog={this.handleLinkToBlog} />
+        < Blog 
+          handleLinkToBlog={this.handleLinkToBlog} 
+          hanldeMouseEnter={this.handleBlogHover}
+          handleMouseLeave={this.handleBlogLeave}
+        />
         < Contact />
       </div>
     );
