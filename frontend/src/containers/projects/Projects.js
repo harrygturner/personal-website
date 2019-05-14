@@ -86,7 +86,7 @@ export default class Projects extends Component {
                <div className='bold'>AccessAbled</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='gympal' 
             onMouseEnter={this.handleMouseEnter} 
@@ -97,7 +97,7 @@ export default class Projects extends Component {
                <div className='bold'>GymPal</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='NC' 
             onMouseEnter={this.handleMouseEnter} 
@@ -108,7 +108,7 @@ export default class Projects extends Component {
                <div className='bold'>NightCrawler</div>
                <div className='language'>Vanilla Javascript and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='SFB' 
             onMouseEnter={this.handleMouseEnter} 
@@ -119,7 +119,7 @@ export default class Projects extends Component {
                <div className='bold'>Simpsons Fantasy Basketball</div>
                <div className='language'>Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='WI' 
             onMouseEnter={this.handleMouseEnter} 
@@ -130,7 +130,7 @@ export default class Projects extends Component {
                <div className='bold'>Wheelchair Analysis</div>
                <div className='language'>Mechanical Engineering and C++</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='VR' 
             onMouseEnter={this.handleMouseEnter}
@@ -141,7 +141,7 @@ export default class Projects extends Component {
                <div className='bold'>Voice Recognition</div>
                <div className='language'>Vanilla Javascript</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
       </div>
    )
@@ -157,7 +157,7 @@ export default class Projects extends Component {
                <div className='bold'>AccessAbled</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='gympal' 
             onMouseEnter={this.handleMouseEnter}
@@ -168,7 +168,7 @@ export default class Projects extends Component {
                <div className='bold'>GymPal</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='NC' 
             onMouseEnter={this.handleMouseEnter}
@@ -179,7 +179,7 @@ export default class Projects extends Component {
                <div className='bold'>NightCrawler</div>
                <div className='language'>Vanilla Javascript and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='SFB' 
             onMouseEnter={this.handleMouseEnter}
@@ -190,7 +190,7 @@ export default class Projects extends Component {
                <div className='bold'>Simpsons Fantasy Basketball</div>
                <div className='language'>Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
       </div>
    )
@@ -206,7 +206,7 @@ export default class Projects extends Component {
                <div className='bold'>AccessAbled</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='gympal' 
             onMouseEnter={this.handleMouseEnter}
@@ -217,7 +217,7 @@ export default class Projects extends Component {
                <div className='bold'>GymPal</div>
                <div className='language'>React.js and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='NC' 
             onMouseEnter={this.handleMouseEnter}
@@ -228,7 +228,7 @@ export default class Projects extends Component {
                <div className='bold'>NightCrawler</div>
                <div className='language'>Vanilla Javascript and Ruby on Rails</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
          <div id='VR' 
             onMouseEnter={this.handleMouseEnter}
@@ -239,7 +239,7 @@ export default class Projects extends Component {
                <div className='bold'>Voice Recognition</div>
                <div className='language'>Vanilla Javascript</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
       </div>
    )
@@ -255,7 +255,7 @@ export default class Projects extends Component {
                <div className='bold'>Wheelchair Analysis</div>
                <div className='language'>Mechanical Engineering and C++</div>
             </div>
-            <div className='btn btn-hidden'>LEARN MORE</div>
+            <div className='btn btn-hidden' onClick={this.props.revealProjectInfo}>LEARN MORE</div>
          </div>
       </div>
    )

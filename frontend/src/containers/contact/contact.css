@@ -25,11 +25,11 @@ form {
    max-width: 35%;
    margin: 0 auto;
    display: grid;
-   grid-template-rows: 20% 20% 40% 20%;
-   height: 40%;
+   grid-template-rows: 15% 15% 50% 15%;
+   height: 45%;
 }
 
-#contact input {
+#contact input, #contact textarea {
    margin: 0.3% 0;
    width: 100%;
    height: 5vh;
@@ -43,17 +43,20 @@ form {
    border-bottom: solid 1px inherit;
 }
 
-#contact .message input {
-   height: 95%;
+#contact .message textarea {
+   height: 80%;
+   padding: 2% 1vw;
+   margin-top: 0.5%;
 }
 
-#contact input::placeholder {
+#contact input::placeholder,
+#contact textarea::placeholder {
    color: whitesmoke;
 }
 
-#contact input:focus{
+#contact input:focus,
+#contact textarea:focus {
    outline: none;
-   /* border-bottom: solid 1px rgb(199, 111, 139); */
 }
 
 #contact .sub-btn input {
@@ -66,6 +69,7 @@ form {
    transition: background 1s, border 1s;
    background-color: inherit;
 }
+
 
 .sub-btn {
    display: flex;

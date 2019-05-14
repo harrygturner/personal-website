@@ -6,6 +6,7 @@ import Skills from './containers/about/Skills'
 import Projects from './containers/projects/Projects'
 import Blog from './containers/blog/Blog'
 import Contact from './containers/contact/Contact'
+import ProjectInfo from './containers/mask/ProjectInfo'
 
 export default class App extends Component {
 
@@ -31,7 +32,7 @@ export default class App extends Component {
     const htmlCollection = document.children[0].children[3].children[1].children[0].children
     const arrayOfSections = Array.prototype.slice.call(htmlCollection)
     arrayOfSections.forEach(section => {
-      if(section.id !== 'navbar'){
+      if(section.id !== 'navbar' && section.id !== 'project-info'){
         const sectionTop = section.getBoundingClientRect().top
         const sectionHeight = section.getBoundingClientRect().height
         const navbarSection = document.querySelector(`#navbar .${section.id}`)
@@ -111,6 +112,16 @@ export default class App extends Component {
     })
   }
 
+  // ------------------ project view knowledge ---------------------
+  hideIndividualProjectView = () => {
+    const el = document.querySelector('#project-info');
+    el.classList.add('invisible');
+  }
+
+  revealProjectInfo = e => {
+    document.querySelector('#project-info').classList.remove('invisible');
+  }
+
   render() {
     return (
       <div className="App" onScroll={this.handleScroll}>
@@ -121,13 +132,14 @@ export default class App extends Component {
         />
         < NavBar sectionOnView={this.state.sectionOnView} handleSectionClick={this.handleSectionClick} />
         < Skills />
-        < Projects />
+        < Projects revealProjectInfo={this.revealProjectInfo}/>
         < Blog 
           handleLinkToBlog={this.handleLinkToBlog} 
           hanldeMouseEnter={this.handleBlogHover}
           handleMouseLeave={this.handleBlogLeave}
         />
         < Contact />
+        < ProjectInfo exitProjectView={this.hideIndividualProjectView} />
       </div>
     );
   }

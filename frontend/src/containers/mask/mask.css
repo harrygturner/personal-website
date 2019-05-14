@@ -1,0 +1,87 @@
+#project-info {
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   z-index: 10;
+   top: 0;
+}
+
+#project-info .mask {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   background: rgba(0, 0, 0, 0.5);
+   transition: opacity .3s;
+}
+
+#project-info .modal {
+   position: relative;
+   top: 0;
+   max-width: 650px;
+   height: 90vh;
+   z-index: 20;
+   background: #fff;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: 65% 35%;
+}
+
+#project-info .about {
+   text-align: left;
+   margin: 2% 5%;
+}
+
+#project-info .about .header {
+   padding-top: 1vh;
+   display: grid;
+   grid-template-columns: 80% 20%;
+}
+
+#project-info .about span {
+   color: #41B3A3;
+}
+
+#project-info .about .github {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#project-info .about img {
+   width: 30%;
+   cursor: pointer;
+}
+
+#project-info .line {
+   margin: 2% 0%;
+   border: solid 0.5px gainsboro;
+}
+
+#project-info p {
+   color: black;
+   font-size: 14px;
+   line-height: 20px;
+}
+
+#project-info .exit {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 2%;
+   cursor: pointer;
+}
+
+#project-info .exit i {
+   font-size: 24px;
+}
+
+#project-info.invisible {
+   display: none;
+}
+
+#project-info .carossel {
+   border-bottom: solid black 2px;
+}

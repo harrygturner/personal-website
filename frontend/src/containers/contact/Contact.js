@@ -54,8 +54,7 @@ export default class Contact extends Component {
                   />
                </div>
                <div className='message'>
-                  <input 
-                     type='textarea' 
+                  <textarea  
                      placeholder='YOUR MESSAGE' 
                      name='message'
                      value={this.state.message}
