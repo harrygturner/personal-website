@@ -64,3 +64,49 @@ h1 {
 .highlight {
   color: #E8A87C;
 }
+
+#footer {
+  height: 25vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  background: #41B3A3;
+}
+
+#footer .links {
+  height: 100%;
+  max-width: 900px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr)
+}
+
+#footer .links div {
+  height: 10vh;
+  max-width: 100px;
+  margin: auto 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#footer .links div img {
+  height: 5vh;
+  padding: 0 20px;
+}
+
+#footer .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#footer .navigation div {
+  cursor: pointer;
+}
+
+#footer .navigation div i {
+  padding: 20px;
+}

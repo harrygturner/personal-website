@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Intro from './containers/intro/Intro'
-import NavBar from './containers/NavBar'
-import Skills from './containers/about/Skills'
-import Projects from './containers/projects/Projects'
-import Blog from './containers/blog/Blog'
-import Contact from './containers/contact/Contact'
-import ProjectInfo from './containers/mask/ProjectInfo'
+import Intro from './containers/intro/Intro';
+import NavBar from './containers/NavBar';
+import Skills from './containers/about/Skills';
+import Projects from './containers/projects/Projects';
+import Blog from './containers/blog/Blog';
+import Contact from './containers/contact/Contact';
+import ProjectInfo from './containers/mask/ProjectInfo';
+import Footer from './containers/Footer';
 
 export default class App extends Component {
 
@@ -32,7 +33,7 @@ export default class App extends Component {
     const htmlCollection = document.children[0].children[3].children[1].children[0].children
     const arrayOfSections = Array.prototype.slice.call(htmlCollection)
     arrayOfSections.forEach(section => {
-      if(section.id !== 'navbar' && section.id !== 'project-info'){
+      if(section.id !== 'navbar' && section.id !== 'project-info' && section.id !== 'footer'){
         const sectionTop = section.getBoundingClientRect().top
         const sectionHeight = section.getBoundingClientRect().height
         const navbarSection = document.querySelector(`#navbar .${section.id}`)
@@ -139,6 +140,7 @@ export default class App extends Component {
           handleMouseLeave={this.handleBlogLeave}
         />
         < Contact />
+        < Footer />
         < ProjectInfo exitProjectView={this.hideIndividualProjectView} />
       </div>
     );
